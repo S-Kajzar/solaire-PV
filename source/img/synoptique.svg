@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 690" width="1000" height="690" font-family="Bahnschrift,'DIN Alternate','Roboto Condensed','Arial Narrow',sans-serif">
+  <defs>
+    <pattern id="cells" width="10.3" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10.3" height="10" fill="#18212E"/>
+      <path d="M0 0H10.3M0 0V10" stroke="#3B4C63" stroke-width="0.8"/>
+    </pattern>
+    <marker id="ae" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#C62828"/>
+    </marker>
+    <marker id="aw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#1F8FD0"/>
+    </marker>
+    <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#B26A00"/>
+    </marker>
+    <linearGradient id="inox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9EDF0"/><stop offset=".5" stop-color="#BFC8CF"/><stop offset="1" stop-color="#8E99A3"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCEBF7"/><stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="690" fill="#FFFFFF"/>
+
+  <!-- ===================== LIAISONS ===================== -->
+  <g fill="none" stroke-width="3.2" stroke-linejoin="round">
+    <!-- électrique -->
+    <g stroke="#C62828">
+      <path d="M150 182V244" marker-end="url(#ae)"/>
+      <path d="M150 382V464" marker-end="url(#ae)"/>
+      <path d="M150 425H304" marker-end="url(#ae)"/>
+      <path d="M490 155H600V264" marker-end="url(#ae)"/>
+      <path d="M490 400H524" marker-end="url(#ae)"/>
+      <path d="M680 355H714" marker-end="url(#ae)"/>
+    </g>
+    <!-- eau -->
+    <g stroke="#1F8FD0">
+      <path d="M795 498V426" marker-end="url(#aw)"/>
+      <path d="M795 288V252H902V226" marker-end="url(#aw)"/>
+      <path d="M850 128H864" marker-end="url(#aw)"/>
+      <path d="M962 222V494" marker-end="url(#aw)"/>
+    </g>
+    <!-- commande -->
+    <path d="M852 498V472H932V228" stroke="#B26A00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#ac)"/>
+  </g>
+  <text x="0" y="0" transform="translate(924 352) rotate(-90)" text-anchor="middle" font-size="12.5" font-weight="700" fill="#B26A00">Commande vanne 3 voies</text>
+
+  <!-- ===================== CARTES ===================== -->
+  <g stroke="#1C2530" stroke-width="2" fill="#FFFFFF">
+    <rect x="40" y="30" width="220" height="152"/>
+    <rect x="40" y="250" width="220" height="132"/>
+    <rect x="40" y="470" width="220" height="180"/>
+    <rect x="310" y="80" width="180" height="150"/>
+    <rect x="310" y="330" width="180" height="190"/>
+    <rect x="530" y="270" width="150" height="160"/>
+    <rect x="720" y="290" width="150" height="136"/>
+    <rect x="720" y="40" width="130" height="170"/>
+    <rect x="870" y="70" width="120" height="152"/>
+    <rect x="720" y="504" width="150" height="146"/>
+    <rect x="880" y="500" width="110" height="150"/>
+  </g>
+  <g fill="#1C2530">
+    <rect x="40" y="30" width="220" height="26"/>
+    <rect x="40" y="250" width="220" height="26"/>
+    <rect x="40" y="470" width="220" height="26"/>
+    <rect x="310" y="80" width="180" height="26"/>
+    <rect x="310" y="330" width="180" height="26"/>
+    <rect x="530" y="270" width="150" height="26"/>
+    <rect x="720" y="290" width="150" height="26"/>
+    <rect x="720" y="40" width="130" height="26"/>
+    <rect x="870" y="70" width="120" height="26"/>
+    <rect x="720" y="504" width="150" height="26"/>
+    <rect x="880" y="500" width="110" height="26"/>
+  </g>
+  <g fill="#F2B705" font-size="14" font-weight="700" text-anchor="middle" letter-spacing=".3">
+    <text x="150" y="48">PANNEAUX SOLAIRES</text>
+    <text x="150" y="268">RÉGULATEUR</text>
+    <text x="150" y="488">BATTERIES 24 V</text>
+    <text x="400" y="98">RÉSEAU EDF 230 V</text>
+    <text x="400" y="348">ONDULEUR 230 V</text>
+    <text x="605" y="288" font-size="12.5">INVERSEUR SOURCE</text>
+    <text x="795" y="308">POMPE</text>
+    <text x="785" y="58">EAU DE VILLE</text>
+    <text x="930" y="88">VANNE 3 VOIES</text>
+    <text x="795" y="522" font-size="12.5">CUVE EAU PLUVIALE</text>
+    <text x="935" y="518">TOILETTES</text>
+  </g>
+
+  <!-- ===================== ILLUSTRATIONS ===================== -->
+  <!-- Panneaux : modules monocristallins « full black » -->
+  <g>
+    <circle cx="244" cy="76" r="6" fill="#F2B705"/>
+    <g stroke="#F2B705" stroke-width="2" stroke-linecap="round">
+      <path d="M244 65v-3M244 87v3M233 76h-3M255 76h1M236 68l-2-2M252 84l2 2M252 68l2-2M236 84l-2 2"/>
+    </g>
+    <g stroke="#9AA4AE" stroke-width="2.5">
+      <rect x="54" y="70" width="54" height="98" fill="url(#cells)"/>
+      <rect x="114" y="70" width="54" height="98" fill="url(#cells)"/>
+      <rect x="174" y="70" width="54" height="98" fill="url(#cells)"/>
+    </g>
+    <path d="M56 72l18 0-18 28z M116 72l18 0-18 28z M176 72l18 0-18 28z" fill="#FFFFFF" opacity=".10"/>
+  </g>
+
+  <!-- Régulateur MPPT -->
+  <g>
+    <g fill="#5B6772"><rect x="96" y="288" width="108" height="8"/><rect x="100" y="282" width="4" height="8"/><rect x="112" y="282" width="4" height="8"/><rect x="124" y="282" width="4" height="8"/><rect x="136" y="282" width="4" height="8"/><rect x="148" y="282" width="4" height="8"/><rect x="160" y="282" width="4" height="8"/><rect x="172" y="282" width="4" height="8"/><rect x="184" y="282" width="4" height="8"/><rect x="196" y="282" width="4" height="8"/></g>
+    <rect x="90" y="296" width="120" height="70" rx="3" fill="#1F5FA8"/>
+    <rect x="100" y="306" width="60" height="30" rx="2" fill="#0F1A26"/>
+    <text x="130" y="320" text-anchor="middle" font-size="10" font-weight="700" fill="#7EE2B8">MPPT</text>
+    <text x="130" y="332" text-anchor="middle" font-size="9" fill="#7EE2B8">24 V</text>
+    <circle cx="176" cy="314" r="4" fill="#7EE2B8"/><circle cx="192" cy="314" r="4" fill="#F2B705"/>
+    <rect x="170" y="326" width="28" height="9" rx="2" fill="#E6EEF8"/>
+    <g fill="#D3D8D5"><rect x="100" y="348" width="14" height="12"/><rect x="120" y="348" width="14" height="12"/><rect x="140" y="348" width="14" height="12"/><rect x="160" y="348" width="14" height="12"/><rect x="180" y="348" width="14" height="12"/></g>
+  </g>
+
+  <!-- Batteries : parc de stockage -->
+  <g>
+    <rect x="72" y="520" width="156" height="112" rx="4" fill="#E3E7EA" stroke="#8E99A3" stroke-width="1.5"/>
+    <rect x="72" y="520" width="156" height="20" rx="4" fill="#46525C"/>
+    <rect x="96" y="512" width="16" height="9" fill="#C62828"/><rect x="188" y="512" width="16" height="9" fill="#1C2530"/>
+    <text x="104" y="536" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">+</text>
+    <text x="196" y="536" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">−</text>
+    <rect x="88" y="556" width="66" height="60" rx="3" fill="#FFFFFF" stroke="#C7CDD2"/>
+    <g fill="#1B7A43"><rect x="96" y="600" width="50" height="9"/><rect x="96" y="588" width="50" height="9"/><rect x="96" y="576" width="50" height="9"/></g>
+    <rect x="96" y="564" width="50" height="9" fill="#D3D8D5"/>
+    <text x="190" y="582" text-anchor="middle" font-size="22" font-weight="700" fill="#1C2530">24 V</text>
+    <text x="190" y="602" text-anchor="middle" font-size="10" fill="#46525C">stockage</text>
+  </g>
+
+  <!-- Réseau : pylône haute tension -->
+  <g stroke="#46525C" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M400 116L380 222M400 116L420 222M386 190L414 190M390 168L410 168M384 200L416 212M416 200L384 212M392 150L408 168M408 150L392 168"/>
+    <path d="M362 136H438M370 154H430"/>
+    <path d="M400 116V112"/>
+    <path d="M318 142Q340 150 362 140M438 140Q460 150 482 142M318 160Q345 168 370 158M430 158Q455 168 482 160" stroke="#8E99A3" stroke-width="1.4"/>
+  </g>
+  <g fill="#F2B705"><path d="M452 186l-10 18h8l-6 16 16-22h-8l6-12z"/></g>
+
+  <!-- Onduleur -->
+  <g>
+    <rect x="348" y="368" width="104" height="134" rx="5" fill="#F4F6F7" stroke="#8E99A3" stroke-width="1.5"/>
+    <rect x="348" y="368" width="104" height="10" rx="3" fill="#1F5FA8"/>
+    <rect x="362" y="390" width="76" height="42" rx="2" fill="#0F1A26"/>
+    <text x="400" y="408" text-anchor="middle" font-size="12" font-weight="700" fill="#7EE2B8">230 V ~</text>
+    <path d="M372 420q7-10 14 0t14 0 14 0 14 0" stroke="#7EE2B8" stroke-width="1.8" fill="none"/>
+    <circle cx="370" cy="446" r="4" fill="#1B7A43"/><circle cx="384" cy="446" r="4" fill="#F2B705"/><circle cx="398" cy="446" r="4" fill="#D3D8D5"/>
+    <g stroke="#B9C1C7" stroke-width="3"><path d="M362 462H438M362 470H438M362 478H438M362 486H438"/></g>
+    <g fill="#46525C"><rect x="366" y="502" width="10" height="8"/><rect x="386" y="502" width="10" height="8"/><rect x="406" y="502" width="10" height="8"/><rect x="426" y="502" width="10" height="8"/></g>
+  </g>
+
+  <!-- Inverseur de source : commutateur sur rail DIN -->
+  <g>
+    <rect x="546" y="336" width="118" height="10" fill="#A5ADAA"/>
+    <rect x="552" y="312" width="44" height="98" rx="3" fill="#F4F6F7" stroke="#8E99A3" stroke-width="1.5"/>
+    <rect x="614" y="312" width="44" height="98" rx="3" fill="#F4F6F7" stroke="#8E99A3" stroke-width="1.5"/>
+    <g fill="#46525C"><rect x="558" y="318" width="8" height="8"/><rect x="570" y="318" width="8" height="8"/><rect x="582" y="318" width="8" height="8"/><rect x="620" y="318" width="8" height="8"/><rect x="632" y="318" width="8" height="8"/><rect x="644" y="318" width="8" height="8"/></g>
+    <circle cx="605" cy="372" r="18" fill="#1C2530"/>
+    <rect x="602" y="356" width="6" height="18" rx="2" fill="#F2B705" transform="rotate(-40 605 372)"/>
+    <text x="582" y="402" text-anchor="middle" font-size="11" font-weight="700" fill="#1C2530">I</text>
+    <text x="605" y="402" text-anchor="middle" font-size="11" font-weight="700" fill="#1C2530">0</text>
+    <text x="630" y="402" text-anchor="middle" font-size="11" font-weight="700" fill="#1C2530">II</text>
+  </g>
+
+  <!-- Pompe de surface -->
+  <g>
+    <rect x="740" y="402" width="112" height="8" fill="#46525C"/>
+    <rect x="746" y="350" width="60" height="44" rx="6" fill="#1F5FA8"/>
+    <g stroke="#17508F" stroke-width="2"><path d="M752 356V388M760 356V388M768 356V388M776 356V388M784 356V388M792 356V388"/></g>
+    <rect x="740" y="358" width="8" height="28" rx="2" fill="#17508F"/>
+    <rect x="806" y="354" width="18" height="36" fill="url(#inox)"/>
+    <circle cx="836" cy="372" r="20" fill="url(#inox)" stroke="#8E99A3"/>
+    <rect x="829" y="336" width="14" height="18" fill="url(#inox)" stroke="#8E99A3"/>
+    <rect x="852" y="365" width="12" height="14" fill="url(#inox)" stroke="#8E99A3"/>
+    <rect x="766" y="394" width="10" height="8" fill="#46525C"/><rect x="826" y="392" width="10" height="10" fill="#46525C"/>
+  </g>
+
+  <!-- Eau de ville : château d'eau -->
+  <g>
+    <rect x="722" y="68" width="126" height="140" fill="url(#sky)"/>
+    <path d="M770 132H800L796 200H774Z" fill="#D3D8D5" stroke="#8E99A3"/>
+    <path d="M752 104Q785 88 818 104L808 134H762Z" fill="#E9EDF0" stroke="#8E99A3" stroke-width="1.5"/>
+    <rect x="762" y="132" width="46" height="5" fill="#A5ADAA"/>
+    <path d="M781 178h8v22h-8z" fill="#46525C"/>
+    <path d="M724 200H846" stroke="#7BAF6E" stroke-width="5"/>
+  </g>
+
+  <!-- Vanne 3 voies motorisée -->
+  <g>
+    <rect x="910" y="104" width="40" height="34" rx="3" fill="#46525C"/>
+    <rect x="916" y="110" width="16" height="8" rx="1" fill="#7EE2B8"/>
+    <rect x="924" y="138" width="12" height="12" fill="#8E99A3"/>
+    <rect x="896" y="150" width="68" height="26" rx="4" fill="url(#inox)" stroke="#8E99A3"/>
+    <rect x="918" y="176" width="24" height="26" rx="3" fill="url(#inox)" stroke="#8E99A3"/>
+    <rect x="884" y="155" width="14" height="16" fill="#B9C1C7"/><rect x="962" y="155" width="14" height="16" fill="#B9C1C7"/>
+    <text x="908" y="196" text-anchor="end" font-size="9" fill="#46525C">A</text>
+    <text x="952" y="196" font-size="9" fill="#46525C">B</text>
+  </g>
+
+  <!-- Cuve d'eau pluviale enterrée -->
+  <g>
+    <rect x="722" y="560" width="146" height="88" fill="#EADFC8"/>
+    <g stroke="#CDBE9E" stroke-width="1.4"><path d="M730 600l8-6M760 630l8-6M842 596l8-6M836 636l8-6M730 640l8-6"/></g>
+    <path d="M722 560H868" stroke="#7BAF6E" stroke-width="5"/>
+    <rect x="780" y="546" width="30" height="24" fill="#2E6B4F"/>
+    <rect x="776" y="542" width="38" height="6" fill="#23543E"/>
+    <rect x="744" y="568" width="102" height="64" rx="30" fill="#2E7D5B" stroke="#23543E" stroke-width="2"/>
+    <path d="M750 604H840" stroke="#7FC4E8" stroke-width="2"/>
+    <path d="M752 606H838V614Q795 632 752 614Z" fill="#7FC4E8" opacity=".55"/>
+  </g>
+
+  <!-- Toilettes suspendues -->
+  <g>
+    <rect x="900" y="538" width="48" height="104" fill="#E9EDF0" stroke="#C7CDD2"/>
+    <rect x="910" y="552" width="28" height="18" rx="2" fill="#FFFFFF" stroke="#8E99A3"/>
+    <path d="M924 552V570" stroke="#8E99A3"/>
+    <path d="M948 590H978Q984 590 982 600Q976 622 950 624H948Z" fill="#FFFFFF" stroke="#8E99A3" stroke-width="1.6"/>
+    <path d="M948 586H980" stroke="#8E99A3" stroke-width="3"/>
+  </g>
+
+  <!-- ===================== LÉGENDE ===================== -->
+  <g font-size="13" fill="#1C2530">
+    <rect x="310" y="562" width="380" height="72" fill="#F4F5F2" stroke="#D3D8D5"/>
+    <text x="324" y="584" font-weight="700">LÉGENDE</text>
+    <path d="M324 606H362" stroke="#C62828" stroke-width="3.2" marker-end="url(#ae)"/><text x="372" y="610">Énergie électrique</text>
+    <path d="M512 606H550" stroke="#1F8FD0" stroke-width="3.2" marker-end="url(#aw)"/><text x="560" y="610">Eau</text>
+    <path d="M324 624H362" stroke="#B26A00" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#ac)"/><text x="372" y="628">Commande (niveau de la cuve)</text>
+  </g>
+</svg>
