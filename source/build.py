@@ -25,13 +25,13 @@ TITRE_COURT = "Le solaire photovoltaïque"
 # ---------------------------------------------------------------- images
 def data_uri(nom):
     chemin = os.path.join(ICI, "img", nom)
-    mime = "image/jpeg" if nom.endswith(".jpg") else "image/png"
+    mime = {"jpg": "image/jpeg", "svg": "image/svg+xml"}.get(nom.rsplit(".", 1)[-1], "image/png")
     with open(chemin, "rb") as f:
         return "data:%s;base64,%s" % (mime, base64.b64encode(f.read()).decode("ascii"))
 
 
 IMG = {k: data_uri(v) for k, v in {
-    "synoptique": "synoptique.jpg",
+    "synoptique": "synoptique.svg",
     "schema": "schema-principe.png",
     "chaine": "chaine-energie.png",
     "batterie": "batterie-12v.png",
@@ -87,7 +87,7 @@ H_VERBE = "Un verbe à l'infinitif."
 DOCS = [
     # clé, intitulé, nature, contenu
     ("DP1", "Synoptique de l'installation", "Dossier présentation",
-     '<img class="doc-img" src="%s" width="1000" height="689" alt="Synoptique : panneaux solaires, régulateur, '
+     '<img class="doc-img" src="%s" width="1000" height="690" alt="Synoptique : panneaux solaires, régulateur, '
      'batteries 24 V, onduleur 230 V, réseau EDF, inverseur de source, pompe, cuve d\'eau pluviale, vanne 3 voies, '
      'eau de ville et toilettes.">'
      '<p class="doc-cap">Chaîne électrique en rouge, circuit d\'eau en bleu. En cas de manque d\'eau dans la cuve, '
@@ -180,7 +180,7 @@ CONTENT = {
         ("q", {"id": "q1_1", "label": "Q1.1", "stem": "Donner le nom de l'élément repéré 1 sur le schéma de principe.",
                "hint": H_MOT, "grader": kw(ELEM_REGUL), "expected": "le régulateur (de charge)",
                "why": "<p>On suit l'énergie depuis les panneaux : le premier bloc rencontré, placé entre la production "
-                      "et le stockage, est le <strong>régulateur de charge</strong> (« REGULATEUR » sur le synoptique DP1).</p>"}),
+                      "et le stockage, est le <strong>régulateur de charge</strong> (« RÉGULATEUR » sur le synoptique DP1).</p>"}),
         ("q", {"id": "q1_2", "label": "Q1.2", "stem": "Donner le nom de l'élément repéré 2.",
                "hint": H_MOT, "grader": kw(ELEM_BATT), "expected": "les batteries (accumulateurs)",
                "why": "<p>Le symbole formé de traits longs et courts alternés est celui d'un <strong>accumulateur</strong>. "
@@ -565,7 +565,7 @@ def build():
       {n_q} questions réparties en 3 parties.</p>
     </header>
     <figure class="home-hero">
-      <img src="{hero}" width="1000" height="689" alt="Synoptique de l'installation : panneaux solaires, régulateur, batteries, onduleur, réseau EDF, inverseur de source, pompe, cuve d'eau pluviale, vanne 3 voies et toilettes.">
+      <img src="{hero}" width="1000" height="690" alt="Synoptique de l'installation : panneaux solaires, régulateur, batteries, onduleur, réseau EDF, inverseur de source, pompe, cuve d'eau pluviale, vanne 3 voies et toilettes.">
       <figcaption class="small">Synoptique de l'installation : chaîne électrique en rouge, circuit d'eau en bleu.</figcaption>
     </figure>
     <div class="home-facts">

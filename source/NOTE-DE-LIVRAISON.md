@@ -60,4 +60,4 @@ Le source, c'est l'ancien `index.html`, aucun .docx ni PDF n'ayant été fourni.
 - La chaîne d'énergie (DT1) comporte 7 emplacements d'énergie, mais le sujet d'origine n'en fait nommer que 4. Les autres n'ont pas été ajoutés.
 - Q1.7 et Q1.10 recoupent Q1.5 et Q1.2 (stocker / batteries). Cette redondance vient du sujet d'origine.
 - Le dimensionnement du stockage ne tient pas compte de la profondeur de décharge admissible des batteries, comme dans le sujet d'origine.
-- Poids des images : environ 107 ko (synoptique en double, pour l'accueil et DP1). Taille totale du fichier : environ 440 ko.
+- Synoptique (accueil et DP1) redessiné en SVG (`source/img/synoptique.svg`) à la place de l'ancienne photo-montage : même circuit et mêmes intitulés, matériel actuel, pylône à la place du logo EDF, légende ajoutée. Rien n'y révèle les réponses (pas de mention continu/alternatif, batterie représentée en un seul bloc 24 V).
